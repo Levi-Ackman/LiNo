@@ -1,7 +1,8 @@
 <div align="center">
   <!-- <h1><b> Time-LLM </b></h1> -->
   <!-- <h2><b> Time-LLM </b></h2> -->
-  <h2><b> Code for ICLR2025 Submission ———— LiNo: Robust Forecasting Through Centrifuging Multilevel Linear and Nonlinear Patterns. </b></h2>
+  <h2><b> Code for ICLR2025 Submission
+    LiNo: Robust Forecasting Through Centrifuging Multilevel Linear and Nonlinear Patterns. </b></h2>
 </div>
 
 ## Get Started
