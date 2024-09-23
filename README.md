@@ -17,4 +17,20 @@
    
   ```bash ./scripts/ETTh1/96.sh ```
 
-You can find the training history and results under 'logs/' folder
+You can find:
+
+The training history and results under './logs' folder.
+
+The test results (MSE and MAE) under './test_dicts' folder.
+
+The visualization of the overall prediction and prediction of each Li and No block under './visual_prediction' folder.
+
+The visualization of the weight of each Li and No block under './visual_weight' folder.  ***PS: The method used for getting the weight follows the approach outlined in [An Analysis of Linear Time Series Forecasting Models](https://arxiv.org/abs/2403.14587). ***
+
+## Several examples for better understanding the proposed LiNo in the paper.
+
+Within the storage limits of a GitHub repository, We provide training log files of tasks **input-96-predict-96** on **ETTh1&2, ETTm1&2, PEMS04&08, Weather, and ECL**, to assist readers in reproducing the results from the paper. 
+
+Additionally, we offer visualizations of LiNo's prediction results on **ECL** and **ETTh2** datasets, showcasing the forecasting of each Li block and No block. 
+
+Furthermore, we also provide visualizations of the overall weights of each Li block and No block on **ECL** and **ETTh2** datasets. 
