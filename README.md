@@ -9,7 +9,7 @@
 
 1. Install requirements. ```pip install -r requirements.txt```
 2. Download data. You can download the all datasets from iTransformer: [datasets](https://drive.google.com/u/0/uc?id=1NF7VEefXCmXuWNbnNe858WvQAkJ_7wuP&export=download). **All the datasets are well pre-processed** and can be used easily.
-3. Train the model. We provide the experiment scripts of all benchmarks under the folder `./scripts`. You can replicate the benchmark results of **LiNo** from the paper on the eight datasets by:
+3. Train the model. We provide the experiment scripts of all benchmarks under the folder `./scripts`. You can replicate the benchmark results of **LiNo** from the paper by:
    
   ```python run_script.py```
 
