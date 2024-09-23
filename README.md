@@ -25,7 +25,7 @@ The test results (MSE and MAE) under './test_dicts' folder.
 
 The visualization of the overall prediction and prediction of each Li and No block under './visual_prediction' folder.
 
-The visualization of the weight of each Li and No block under './visual_weight' folder.  ***PS: The method used for getting the weight follows the approach outlined in [An Analysis of Linear Time Series Forecasting Models](https://arxiv.org/abs/2403.14587). ***
+The visualization of the weight of each Li and No block under './visual_weight' folder.  **PS: The method used for getting the weight follows the approach outlined in [An Analysis of Linear Time Series Forecasting Models](https://arxiv.org/abs/2403.14587).**
 
 ## Several examples for better understanding the proposed LiNo in the paper.
 
