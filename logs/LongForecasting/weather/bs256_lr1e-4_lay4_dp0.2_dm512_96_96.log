@@ -1,0 +1,82 @@
+Args in experiment:
+Namespace(batch_size=256, c_out=21, checkpoints='./checkpoints/', d_model=512, data='custom', data_path='weather.csv', dec_in=21, des='Exp', devices='0,1', dropout=0.2, enc_in=21, features='M', freq='h', gpu=0, is_training=1, itr=1, label_len=48, layers=4, learning_rate=0.0001, loss='mse', lradj='constant', model='LiNo', model_id='weather_96_96', num_workers=0, patience=6, pred_len=96, root_path='./dataset/weather/', seq_len=96, target='OT', task_name='long_term_forecast', train_epochs=50, use_amp=False, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
+Model total parameters: 7.06 M
+
+>>>>>>>start training : LiNo_weather_sl96_pl96_lr0.0001_layers_4_dp0.2_dm512>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+train 36696
+val 5175
+test 10444
+Epoch: 1 cost time: 41.823065757751465
+Epoch: 1, Steps: 144 | Train Loss: 0.4575838 Val Loss: 0.4030326 Test Loss: 0.1664063
+Validation loss decreased (inf --> 0.403033).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2 cost time: 38.10719442367554
+Epoch: 2, Steps: 144 | Train Loss: 0.4186363 Val Loss: 0.4055164 Test Loss: 0.1669735
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.0001
+Epoch: 3 cost time: 37.004732847213745
+Epoch: 3, Steps: 144 | Train Loss: 0.4088020 Val Loss: 0.3998586 Test Loss: 0.1631827
+Validation loss decreased (0.403033 --> 0.399859).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 4 cost time: 28.407763242721558
+Epoch: 4, Steps: 144 | Train Loss: 0.3993352 Val Loss: 0.4020332 Test Loss: 0.1633677
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.0001
+Epoch: 5 cost time: 23.938096523284912
+Epoch: 5, Steps: 144 | Train Loss: 0.3915316 Val Loss: 0.3999639 Test Loss: 0.1633223
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 0.0001
+Epoch: 6 cost time: 24.14915704727173
+Epoch: 6, Steps: 144 | Train Loss: 0.3845360 Val Loss: 0.3976006 Test Loss: 0.1610859
+Validation loss decreased (0.399859 --> 0.397601).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 7 cost time: 27.580111742019653
+Epoch: 7, Steps: 144 | Train Loss: 0.3780006 Val Loss: 0.4023745 Test Loss: 0.1633510
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.0001
+Epoch: 8 cost time: 24.067683935165405
+Epoch: 8, Steps: 144 | Train Loss: 0.3724499 Val Loss: 0.3893292 Test Loss: 0.1540694
+Validation loss decreased (0.397601 --> 0.389329).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 9 cost time: 23.7584068775177
+Epoch: 9, Steps: 144 | Train Loss: 0.3664777 Val Loss: 0.3942692 Test Loss: 0.1599814
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.0001
+Epoch: 10 cost time: 27.551993370056152
+Epoch: 10, Steps: 144 | Train Loss: 0.3619565 Val Loss: 0.4020174 Test Loss: 0.1609213
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 0.0001
+Epoch: 11 cost time: 24.86780333518982
+Epoch: 11, Steps: 144 | Train Loss: 0.3553271 Val Loss: 0.3972313 Test Loss: 0.1578277
+EarlyStopping counter: 3 out of 6
+Updating learning rate to 0.0001
+Epoch: 12 cost time: 25.091558694839478
+Epoch: 12, Steps: 144 | Train Loss: 0.3513197 Val Loss: 0.4001441 Test Loss: 0.1598320
+EarlyStopping counter: 4 out of 6
+Updating learning rate to 0.0001
+Epoch: 13 cost time: 26.545283794403076
+Epoch: 13, Steps: 144 | Train Loss: 0.3474801 Val Loss: 0.4091497 Test Loss: 0.1678975
+EarlyStopping counter: 5 out of 6
+Updating learning rate to 0.0001
+Epoch: 14 cost time: 26.94101858139038
+Epoch: 14, Steps: 144 | Train Loss: 0.3396439 Val Loss: 0.4025877 Test Loss: 0.1628472
+EarlyStopping counter: 6 out of 6
+Early stopping
+>>>>>>>testing : LiNo_weather_sl96_pl96_lr0.0001_layers_4_dp0.2_dm512<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+test 10444
+loading model..............
+
+test shape: (10444, 96, 21) (10444, 96, 21)
+mse:0.154, mae:0.199
+>>>>>>>visualizing of prediction : LiNo_weather_sl96_pl96_lr0.0001_layers_4_dp0.2_dm512<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+test 10444
+loading model..............
+
+>>>>>>>visualizing of layer (Li block and No block) weight : LiNo_weather_sl96_pl96_lr0.0001_layers_4_dp0.2_dm512<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+loading model..............
+

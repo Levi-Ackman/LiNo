@@ -1,0 +1,102 @@
+Args in experiment:
+Namespace(batch_size=128, c_out=7, checkpoints='./checkpoints/', d_model=256, data='ETTm2', data_path='ETTm2.csv', dec_in=7, des='Exp', devices='0,1', dropout=0.0, enc_in=7, features='M', freq='h', gpu=0, is_training=1, itr=1, label_len=48, layers=2, learning_rate=1e-05, loss='mse', lradj='constant', model='LiNo', model_id='ETTm2_96_96', num_workers=0, patience=6, pred_len=96, root_path='./dataset/ETT-small/', seq_len=96, target='OT', task_name='long_term_forecast', train_epochs=50, use_amp=False, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
+Model total parameters: 0.95 M
+
+>>>>>>>start training : LiNo_ETTm2_sl96_pl96_lr1e-05_layers_2_dp0.0_dm256>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+train 34369
+val 11425
+test 11425
+Epoch: 1 cost time: 9.17760682106018
+Epoch: 1, Steps: 269 | Train Loss: 0.2702820 Val Loss: 0.1359371 Test Loss: 0.1921521
+Validation loss decreased (inf --> 0.135937).  Saving model ...
+Updating learning rate to 1e-05
+Epoch: 2 cost time: 12.360720872879028
+Epoch: 2, Steps: 269 | Train Loss: 0.2439524 Val Loss: 0.1298814 Test Loss: 0.1826528
+Validation loss decreased (0.135937 --> 0.129881).  Saving model ...
+Updating learning rate to 1e-05
+Epoch: 3 cost time: 13.325266361236572
+Epoch: 3, Steps: 269 | Train Loss: 0.2357731 Val Loss: 0.1292849 Test Loss: 0.1806172
+Validation loss decreased (0.129881 --> 0.129285).  Saving model ...
+Updating learning rate to 1e-05
+Epoch: 4 cost time: 12.493368148803711
+Epoch: 4, Steps: 269 | Train Loss: 0.2310100 Val Loss: 0.1272969 Test Loss: 0.1776126
+Validation loss decreased (0.129285 --> 0.127297).  Saving model ...
+Updating learning rate to 1e-05
+Epoch: 5 cost time: 9.81460189819336
+Epoch: 5, Steps: 269 | Train Loss: 0.2268083 Val Loss: 0.1265510 Test Loss: 0.1759643
+Validation loss decreased (0.127297 --> 0.126551).  Saving model ...
+Updating learning rate to 1e-05
+Epoch: 6 cost time: 12.191796064376831
+Epoch: 6, Steps: 269 | Train Loss: 0.2226654 Val Loss: 0.1260731 Test Loss: 0.1748005
+Validation loss decreased (0.126551 --> 0.126073).  Saving model ...
+Updating learning rate to 1e-05
+Epoch: 7 cost time: 8.311861991882324
+Epoch: 7, Steps: 269 | Train Loss: 0.2198419 Val Loss: 0.1257659 Test Loss: 0.1738603
+Validation loss decreased (0.126073 --> 0.125766).  Saving model ...
+Updating learning rate to 1e-05
+Epoch: 8 cost time: 11.055075883865356
+Epoch: 8, Steps: 269 | Train Loss: 0.2173114 Val Loss: 0.1250733 Test Loss: 0.1726928
+Validation loss decreased (0.125766 --> 0.125073).  Saving model ...
+Updating learning rate to 1e-05
+Epoch: 9 cost time: 9.173508644104004
+Epoch: 9, Steps: 269 | Train Loss: 0.2152422 Val Loss: 0.1252540 Test Loss: 0.1725385
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 1e-05
+Epoch: 10 cost time: 10.538054943084717
+Epoch: 10, Steps: 269 | Train Loss: 0.2129611 Val Loss: 0.1271217 Test Loss: 0.1747992
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 1e-05
+Epoch: 11 cost time: 9.35945749282837
+Epoch: 11, Steps: 269 | Train Loss: 0.2108058 Val Loss: 0.1254009 Test Loss: 0.1724152
+EarlyStopping counter: 3 out of 6
+Updating learning rate to 1e-05
+Epoch: 12 cost time: 8.5457923412323
+Epoch: 12, Steps: 269 | Train Loss: 0.2085635 Val Loss: 0.1252048 Test Loss: 0.1719356
+EarlyStopping counter: 4 out of 6
+Updating learning rate to 1e-05
+Epoch: 13 cost time: 9.52165937423706
+Epoch: 13, Steps: 269 | Train Loss: 0.2068248 Val Loss: 0.1250674 Test Loss: 0.1714458
+Validation loss decreased (0.125073 --> 0.125067).  Saving model ...
+Updating learning rate to 1e-05
+Epoch: 14 cost time: 11.987202882766724
+Epoch: 14, Steps: 269 | Train Loss: 0.2045454 Val Loss: 0.1251112 Test Loss: 0.1717087
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 1e-05
+Epoch: 15 cost time: 8.396687746047974
+Epoch: 15, Steps: 269 | Train Loss: 0.2025671 Val Loss: 0.1264135 Test Loss: 0.1730932
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 1e-05
+Epoch: 16 cost time: 8.571902990341187
+Epoch: 16, Steps: 269 | Train Loss: 0.2007943 Val Loss: 0.1263162 Test Loss: 0.1728766
+EarlyStopping counter: 3 out of 6
+Updating learning rate to 1e-05
+Epoch: 17 cost time: 9.491357564926147
+Epoch: 17, Steps: 269 | Train Loss: 0.1991723 Val Loss: 0.1281989 Test Loss: 0.1751054
+EarlyStopping counter: 4 out of 6
+Updating learning rate to 1e-05
+Epoch: 18 cost time: 10.902215719223022
+Epoch: 18, Steps: 269 | Train Loss: 0.1973989 Val Loss: 0.1280192 Test Loss: 0.1761041
+EarlyStopping counter: 5 out of 6
+Updating learning rate to 1e-05
+Epoch: 19 cost time: 8.553605318069458
+Epoch: 19, Steps: 269 | Train Loss: 0.1960342 Val Loss: 0.1258433 Test Loss: 0.1722045
+EarlyStopping counter: 6 out of 6
+Early stopping
+>>>>>>>testing : LiNo_ETTm2_sl96_pl96_lr1e-05_layers_2_dp0.0_dm256<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+test 11425
+loading model..............
+
+test shape: (11425, 96, 7) (11425, 96, 7)
+mse:0.171, mae:0.254
+>>>>>>>visualizing of prediction : LiNo_ETTm2_sl96_pl96_lr1e-05_layers_2_dp0.0_dm256<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+test 11425
+loading model..............
+
+>>>>>>>visualizing of layer (Li block and No block) weight : LiNo_ETTm2_sl96_pl96_lr1e-05_layers_2_dp0.0_dm256<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+loading model..............
+

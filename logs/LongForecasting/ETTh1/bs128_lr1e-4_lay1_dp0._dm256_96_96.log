@@ -1,0 +1,82 @@
+Args in experiment:
+Namespace(batch_size=128, c_out=7, checkpoints='./checkpoints/', d_model=256, data='ETTh1', data_path='ETTh1.csv', dec_in=7, des='Exp', devices='0,1', dropout=0.0, enc_in=7, features='M', freq='h', gpu=0, is_training=1, itr=1, label_len=48, layers=1, learning_rate=0.0001, loss='mse', lradj='constant', model='LiNo', model_id='ETTh1_96_96', num_workers=0, patience=6, pred_len=96, root_path='./dataset/ETT-small/', seq_len=96, target='OT', task_name='long_term_forecast', train_epochs=50, use_amp=False, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
+Model total parameters: 0.49 M
+
+>>>>>>>start training : LiNo_ETTh1_sl96_pl96_lr0.0001_layers_1_dp0.0_dm256>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+train 8449
+val 2785
+test 2785
+Epoch: 1 cost time: 1.915982961654663
+Epoch: 1, Steps: 67 | Train Loss: 0.4385466 Val Loss: 0.7499223 Test Loss: 0.4237426
+Validation loss decreased (inf --> 0.749922).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2 cost time: 0.7470507621765137
+Epoch: 2, Steps: 67 | Train Loss: 0.3763670 Val Loss: 0.7104753 Test Loss: 0.3935396
+Validation loss decreased (0.749922 --> 0.710475).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 3 cost time: 0.7419719696044922
+Epoch: 3, Steps: 67 | Train Loss: 0.3614807 Val Loss: 0.7021217 Test Loss: 0.3853096
+Validation loss decreased (0.710475 --> 0.702122).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 4 cost time: 0.5929656028747559
+Epoch: 4, Steps: 67 | Train Loss: 0.3532166 Val Loss: 0.6921717 Test Loss: 0.3836470
+Validation loss decreased (0.702122 --> 0.692172).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 5 cost time: 0.6896576881408691
+Epoch: 5, Steps: 67 | Train Loss: 0.3500697 Val Loss: 0.6948663 Test Loss: 0.3810494
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.0001
+Epoch: 6 cost time: 0.584639310836792
+Epoch: 6, Steps: 67 | Train Loss: 0.3476034 Val Loss: 0.6909575 Test Loss: 0.3800588
+Validation loss decreased (0.692172 --> 0.690958).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 7 cost time: 0.5635294914245605
+Epoch: 7, Steps: 67 | Train Loss: 0.3446367 Val Loss: 0.6812461 Test Loss: 0.3778378
+Validation loss decreased (0.690958 --> 0.681246).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 8 cost time: 0.5757708549499512
+Epoch: 8, Steps: 67 | Train Loss: 0.3448303 Val Loss: 0.6777323 Test Loss: 0.3775049
+Validation loss decreased (0.681246 --> 0.677732).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 9 cost time: 0.5595078468322754
+Epoch: 9, Steps: 67 | Train Loss: 0.3378613 Val Loss: 0.6781088 Test Loss: 0.3771473
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.0001
+Epoch: 10 cost time: 0.586799144744873
+Epoch: 10, Steps: 67 | Train Loss: 0.3359181 Val Loss: 0.6777929 Test Loss: 0.3800632
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 0.0001
+Epoch: 11 cost time: 0.6398849487304688
+Epoch: 11, Steps: 67 | Train Loss: 0.3336334 Val Loss: 0.6831438 Test Loss: 0.3777464
+EarlyStopping counter: 3 out of 6
+Updating learning rate to 0.0001
+Epoch: 12 cost time: 0.5744640827178955
+Epoch: 12, Steps: 67 | Train Loss: 0.3294910 Val Loss: 0.6913865 Test Loss: 0.3828059
+EarlyStopping counter: 4 out of 6
+Updating learning rate to 0.0001
+Epoch: 13 cost time: 0.6522345542907715
+Epoch: 13, Steps: 67 | Train Loss: 0.3298098 Val Loss: 0.6799054 Test Loss: 0.3808240
+EarlyStopping counter: 5 out of 6
+Updating learning rate to 0.0001
+Epoch: 14 cost time: 0.6908984184265137
+Epoch: 14, Steps: 67 | Train Loss: 0.3216810 Val Loss: 0.6878636 Test Loss: 0.3834813
+EarlyStopping counter: 6 out of 6
+Early stopping
+>>>>>>>testing : LiNo_ETTh1_sl96_pl96_lr0.0001_layers_1_dp0.0_dm256<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+test 2785
+loading model..............
+
+test shape: (2785, 96, 7) (2785, 96, 7)
+mse:0.378, mae:0.395
+>>>>>>>visualizing of prediction : LiNo_ETTh1_sl96_pl96_lr0.0001_layers_1_dp0.0_dm256<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+test 2785
+loading model..............
+
+>>>>>>>visualizing of layer (Li block and No block) weight : LiNo_ETTh1_sl96_pl96_lr0.0001_layers_1_dp0.0_dm256<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+loading model..............
+

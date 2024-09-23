@@ -1,0 +1,86 @@
+Args in experiment:
+Namespace(batch_size=128, c_out=7, checkpoints='./checkpoints/', d_model=512, data='ETTm1', data_path='ETTm1.csv', dec_in=7, des='Exp', devices='0,1', dropout=0.0, enc_in=7, features='M', freq='h', gpu=0, is_training=1, itr=1, label_len=48, layers=3, learning_rate=1e-05, loss='mse', lradj='constant', model='LiNo', model_id='ETTm1_96_96', num_workers=0, patience=6, pred_len=96, root_path='./dataset/ETT-small/', seq_len=96, target='OT', task_name='long_term_forecast', train_epochs=50, use_amp=False, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
+Model total parameters: 5.29 M
+
+>>>>>>>start training : LiNo_ETTm1_sl96_pl96_lr1e-05_layers_3_dp0.0_dm512>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+train 34369
+val 11425
+test 11425
+Epoch: 1 cost time: 9.976679563522339
+Epoch: 1, Steps: 269 | Train Loss: 0.3552089 Val Loss: 0.3898933 Test Loss: 0.3443640
+Validation loss decreased (inf --> 0.389893).  Saving model ...
+Updating learning rate to 1e-05
+Epoch: 2 cost time: 16.170557260513306
+Epoch: 2, Steps: 269 | Train Loss: 0.2932996 Val Loss: 0.3836641 Test Loss: 0.3298822
+Validation loss decreased (0.389893 --> 0.383664).  Saving model ...
+Updating learning rate to 1e-05
+Epoch: 3 cost time: 17.52881932258606
+Epoch: 3, Steps: 269 | Train Loss: 0.2777303 Val Loss: 0.3861063 Test Loss: 0.3296968
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 1e-05
+Epoch: 4 cost time: 13.663556098937988
+Epoch: 4, Steps: 269 | Train Loss: 0.2700940 Val Loss: 0.3867959 Test Loss: 0.3274491
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 1e-05
+Epoch: 5 cost time: 15.349092721939087
+Epoch: 5, Steps: 269 | Train Loss: 0.2644411 Val Loss: 0.3854112 Test Loss: 0.3241194
+EarlyStopping counter: 3 out of 6
+Updating learning rate to 1e-05
+Epoch: 6 cost time: 12.70609712600708
+Epoch: 6, Steps: 269 | Train Loss: 0.2595957 Val Loss: 0.3881905 Test Loss: 0.3228843
+EarlyStopping counter: 4 out of 6
+Updating learning rate to 1e-05
+Epoch: 7 cost time: 14.365806579589844
+Epoch: 7, Steps: 269 | Train Loss: 0.2551517 Val Loss: 0.3834079 Test Loss: 0.3223794
+Validation loss decreased (0.383664 --> 0.383408).  Saving model ...
+Updating learning rate to 1e-05
+Epoch: 8 cost time: 12.907134532928467
+Epoch: 8, Steps: 269 | Train Loss: 0.2512079 Val Loss: 0.3863583 Test Loss: 0.3211051
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 1e-05
+Epoch: 9 cost time: 12.472883701324463
+Epoch: 9, Steps: 269 | Train Loss: 0.2476015 Val Loss: 0.3818613 Test Loss: 0.3224257
+Validation loss decreased (0.383408 --> 0.381861).  Saving model ...
+Updating learning rate to 1e-05
+Epoch: 10 cost time: 12.10047698020935
+Epoch: 10, Steps: 269 | Train Loss: 0.2439596 Val Loss: 0.3960545 Test Loss: 0.3243144
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 1e-05
+Epoch: 11 cost time: 14.111955165863037
+Epoch: 11, Steps: 269 | Train Loss: 0.2405961 Val Loss: 0.3885144 Test Loss: 0.3200129
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 1e-05
+Epoch: 12 cost time: 11.045343160629272
+Epoch: 12, Steps: 269 | Train Loss: 0.2373748 Val Loss: 0.3872010 Test Loss: 0.3221427
+EarlyStopping counter: 3 out of 6
+Updating learning rate to 1e-05
+Epoch: 13 cost time: 11.063394546508789
+Epoch: 13, Steps: 269 | Train Loss: 0.2339311 Val Loss: 0.3905195 Test Loss: 0.3240958
+EarlyStopping counter: 4 out of 6
+Updating learning rate to 1e-05
+Epoch: 14 cost time: 12.659282207489014
+Epoch: 14, Steps: 269 | Train Loss: 0.2309973 Val Loss: 0.3963540 Test Loss: 0.3236345
+EarlyStopping counter: 5 out of 6
+Updating learning rate to 1e-05
+Epoch: 15 cost time: 12.744479656219482
+Epoch: 15, Steps: 269 | Train Loss: 0.2279591 Val Loss: 0.3908834 Test Loss: 0.3238707
+EarlyStopping counter: 6 out of 6
+Early stopping
+>>>>>>>testing : LiNo_ETTm1_sl96_pl96_lr1e-05_layers_3_dp0.0_dm512<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+test 11425
+loading model..............
+
+test shape: (11425, 96, 7) (11425, 96, 7)
+mse:0.322, mae:0.361
+>>>>>>>visualizing of prediction : LiNo_ETTm1_sl96_pl96_lr1e-05_layers_3_dp0.0_dm512<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+test 11425
+loading model..............
+
+>>>>>>>visualizing of layer (Li block and No block) weight : LiNo_ETTm1_sl96_pl96_lr1e-05_layers_3_dp0.0_dm512<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+loading model..............
+

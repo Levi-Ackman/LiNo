@@ -1,0 +1,158 @@
+Args in experiment:
+Namespace(batch_size=64, c_out=307, checkpoints='./checkpoints/', d_model=512, data='PEMS', data_path='PEMS04.npz', dec_in=307, des='Exp', devices='0,1', dropout=0.2, enc_in=307, features='M', freq='h', gpu=0, is_training=1, itr=1, label_len=48, layers=4, learning_rate=0.001, loss='mse', lradj='constant', model='LiNo', model_id='PEMS04_96_96', num_workers=0, patience=6, pred_len=96, root_path='./dataset/PEMS/', seq_len=96, target='OT', task_name='long_term_forecast', train_epochs=50, use_amp=False, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
+Model total parameters: 7.65 M
+
+>>>>>>>start training : LiNo_PEMS04_sl96_pl96_lr0.001_layers_4_dp0.2_dm512>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+train 10004
+val 3207
+test 3208
+Epoch: 1 cost time: 86.46097660064697
+Epoch: 1, Steps: 157 | Train Loss: 0.5476869 Val Loss: 0.5877025 Test Loss: 0.6598569
+Validation loss decreased (inf --> 0.587702).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 2 cost time: 66.32170176506042
+Epoch: 2, Steps: 157 | Train Loss: 0.2910872 Val Loss: 0.2282580 Test Loss: 0.2507316
+Validation loss decreased (0.587702 --> 0.228258).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 3 cost time: 66.52389192581177
+Epoch: 3, Steps: 157 | Train Loss: 0.2015440 Val Loss: 0.1775820 Test Loss: 0.2171528
+Validation loss decreased (0.228258 --> 0.177582).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 4 cost time: 57.909146547317505
+Epoch: 4, Steps: 157 | Train Loss: 0.1761371 Val Loss: 0.1698081 Test Loss: 0.2065377
+Validation loss decreased (0.177582 --> 0.169808).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 5 cost time: 58.843934535980225
+Epoch: 5, Steps: 157 | Train Loss: 0.1567210 Val Loss: 0.1600006 Test Loss: 0.1844316
+Validation loss decreased (0.169808 --> 0.160001).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 6 cost time: 59.14037752151489
+Epoch: 6, Steps: 157 | Train Loss: 0.1470416 Val Loss: 0.1410301 Test Loss: 0.1661962
+Validation loss decreased (0.160001 --> 0.141030).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 7 cost time: 58.05883765220642
+Epoch: 7, Steps: 157 | Train Loss: 0.1337244 Val Loss: 0.1666252 Test Loss: 0.1767612
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.001
+Epoch: 8 cost time: 57.01976251602173
+Epoch: 8, Steps: 157 | Train Loss: 0.1321892 Val Loss: 0.1409356 Test Loss: 0.1627776
+Validation loss decreased (0.141030 --> 0.140936).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 9 cost time: 58.268325328826904
+Epoch: 9, Steps: 157 | Train Loss: 0.1257086 Val Loss: 0.1351939 Test Loss: 0.1592219
+Validation loss decreased (0.140936 --> 0.135194).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 10 cost time: 57.418428897857666
+Epoch: 10, Steps: 157 | Train Loss: 0.1225423 Val Loss: 0.1263358 Test Loss: 0.1500027
+Validation loss decreased (0.135194 --> 0.126336).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 11 cost time: 56.76215481758118
+Epoch: 11, Steps: 157 | Train Loss: 0.1190457 Val Loss: 0.1425002 Test Loss: 0.1715489
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.001
+Epoch: 12 cost time: 57.53138828277588
+Epoch: 12, Steps: 157 | Train Loss: 0.1136833 Val Loss: 0.1247799 Test Loss: 0.1443796
+Validation loss decreased (0.126336 --> 0.124780).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 13 cost time: 57.825942039489746
+Epoch: 13, Steps: 157 | Train Loss: 0.1108521 Val Loss: 0.1274727 Test Loss: 0.1533182
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.001
+Epoch: 14 cost time: 57.9844605922699
+Epoch: 14, Steps: 157 | Train Loss: 0.1076627 Val Loss: 0.1330836 Test Loss: 0.1648929
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 0.001
+Epoch: 15 cost time: 56.78487730026245
+Epoch: 15, Steps: 157 | Train Loss: 0.1089266 Val Loss: 0.1244831 Test Loss: 0.1521967
+Validation loss decreased (0.124780 --> 0.124483).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 16 cost time: 58.84379172325134
+Epoch: 16, Steps: 157 | Train Loss: 0.1028242 Val Loss: 0.1267017 Test Loss: 0.1574887
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.001
+Epoch: 17 cost time: 58.455114126205444
+Epoch: 17, Steps: 157 | Train Loss: 0.1103081 Val Loss: 0.1322101 Test Loss: 0.1646095
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 0.001
+Epoch: 18 cost time: 58.056344985961914
+Epoch: 18, Steps: 157 | Train Loss: 0.1051850 Val Loss: 0.1267385 Test Loss: 0.1494047
+EarlyStopping counter: 3 out of 6
+Updating learning rate to 0.001
+Epoch: 19 cost time: 57.56227231025696
+Epoch: 19, Steps: 157 | Train Loss: 0.0986665 Val Loss: 0.1197102 Test Loss: 0.1411850
+Validation loss decreased (0.124483 --> 0.119710).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 20 cost time: 57.88509202003479
+Epoch: 20, Steps: 157 | Train Loss: 0.1027921 Val Loss: 0.1189224 Test Loss: 0.1405403
+Validation loss decreased (0.119710 --> 0.118922).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 21 cost time: 57.034624099731445
+Epoch: 21, Steps: 157 | Train Loss: 0.0991715 Val Loss: 0.1240807 Test Loss: 0.1504827
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.001
+Epoch: 22 cost time: 56.96001124382019
+Epoch: 22, Steps: 157 | Train Loss: 0.0954389 Val Loss: 0.1207242 Test Loss: 0.1420363
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 0.001
+Epoch: 23 cost time: 57.03408908843994
+Epoch: 23, Steps: 157 | Train Loss: 0.1033163 Val Loss: 0.1194716 Test Loss: 0.1419581
+EarlyStopping counter: 3 out of 6
+Updating learning rate to 0.001
+Epoch: 24 cost time: 56.87344479560852
+Epoch: 24, Steps: 157 | Train Loss: 0.0948583 Val Loss: 0.1187925 Test Loss: 0.1440476
+Validation loss decreased (0.118922 --> 0.118793).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 25 cost time: 56.8646879196167
+Epoch: 25, Steps: 157 | Train Loss: 0.0920437 Val Loss: 0.1196474 Test Loss: 0.1436587
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.001
+Epoch: 26 cost time: 57.107704162597656
+Epoch: 26, Steps: 157 | Train Loss: 0.0976063 Val Loss: 0.1325372 Test Loss: 0.1651318
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 0.001
+Epoch: 27 cost time: 57.4218544960022
+Epoch: 27, Steps: 157 | Train Loss: 0.0947740 Val Loss: 0.1167122 Test Loss: 0.1373691
+Validation loss decreased (0.118793 --> 0.116712).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 28 cost time: 58.081175327301025
+Epoch: 28, Steps: 157 | Train Loss: 0.0910985 Val Loss: 0.1185391 Test Loss: 0.1439100
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.001
+Epoch: 29 cost time: 56.43437361717224
+Epoch: 29, Steps: 157 | Train Loss: 0.0907917 Val Loss: 0.1190869 Test Loss: 0.1431284
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 0.001
+Epoch: 30 cost time: 58.251270055770874
+Epoch: 30, Steps: 157 | Train Loss: 0.0943197 Val Loss: 0.1174793 Test Loss: 0.1467022
+EarlyStopping counter: 3 out of 6
+Updating learning rate to 0.001
+Epoch: 31 cost time: 58.17057251930237
+Epoch: 31, Steps: 157 | Train Loss: 0.0882083 Val Loss: 0.1203887 Test Loss: 0.1488167
+EarlyStopping counter: 4 out of 6
+Updating learning rate to 0.001
+Epoch: 32 cost time: 58.18342876434326
+Epoch: 32, Steps: 157 | Train Loss: 0.0950747 Val Loss: 0.1299200 Test Loss: 0.1607403
+EarlyStopping counter: 5 out of 6
+Updating learning rate to 0.001
+Epoch: 33 cost time: 56.88075804710388
+Epoch: 33, Steps: 157 | Train Loss: 0.0928025 Val Loss: 0.1194076 Test Loss: 0.1412183
+EarlyStopping counter: 6 out of 6
+Early stopping
+>>>>>>>testing : LiNo_PEMS04_sl96_pl96_lr0.001_layers_4_dp0.2_dm512<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+test 3208
+loading model..............
+
+test shape: (3208, 96, 307) (3208, 96, 307)
+mse:0.137, mae:0.247
+>>>>>>>visualizing of prediction : LiNo_PEMS04_sl96_pl96_lr0.001_layers_4_dp0.2_dm512<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+test 3208
+loading model..............
+
+>>>>>>>visualizing of layer (Li block and No block) weight : LiNo_PEMS04_sl96_pl96_lr0.001_layers_4_dp0.2_dm512<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+loading model..............
+
