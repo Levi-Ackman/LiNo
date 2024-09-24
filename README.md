@@ -13,9 +13,9 @@
    
   ```python run_script.py```
 
-4. Alternatively, you can use bash commands to individually run scripts in the 'scripts' folder from the command line to obtain results for individual datasets, take Traffic for example, you can use the below command line to obtain the result of **input-96-predict-96**:
+4. Alternatively, you can use bash commands to individually run scripts in the 'scripts' folder from the command line to obtain results for individual datasets, take for example, you can use the below command line to obtain the multivariate forecasting result of  **input-96-predict-96** on ETTh1:
    
-  ```bash ./scripts/ETTh1/96.sh ```
+  ```bash ./scripts/Multivariate/ETTh1/96.sh ```
 
 You can find:
 
@@ -27,7 +27,7 @@ The visualization of the overall prediction and prediction of each Li and No blo
 
 The visualization of the weight of each Li and No block under './visual_weight' folder.  **PS: The method used for getting the weight follows the approach outlined in [An Analysis of Linear Time Series Forecasting Models](https://arxiv.org/abs/2403.14587).**
 
-## Several examples for better understanding the proposed LiNo in the paper.
+## Several examples for better understanding the proposed LiNo in the paper (Multivariate forecasting case).
 
 Within the storage limits of a GitHub repository, We provide training log files of tasks **input-96-predict-96** on **ETTh1&2, ETTm1&2, PEMS04&08, Weather, and ECL**, to assist readers in reproducing the results from the paper. 
 
