@@ -19,9 +19,9 @@ def data_provider(args, flag):
         drop_last = False
         batch_size = args.batch_size  # evaluation
         freq = args.freq
-    elif flag == 'val' and args.data_path[:-4]=='exchange_rate':
-        shuffle_flag = True
-        drop_last = False
+    elif flag == 'test' and args.features =='S':
+        shuffle_flag = False
+        drop_last = True
         batch_size = args.batch_size  # evaluation
         freq = args.freq
     else:
