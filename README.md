@@ -1,7 +1,7 @@
 <div align="center">
   <!-- <h1><b> Time-LLM </b></h1> -->
   <!-- <h2><b> Time-LLM </b></h2> -->
-  <h2><b> Code for ICML2025 Submission:</b></h2>
+  <h2><b> Code for Paper:</b></h2>
   <h2><b> LiNo: Advancing Recursive Residual Decomposition of Linear and Nonlinear Patterns for Robust Time Series Forecasting. </b></h2>
 </div>
 
